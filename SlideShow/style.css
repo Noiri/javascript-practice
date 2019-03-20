@@ -1,65 +1,65 @@
 .container {
-	margin: 0 auto;
-	border: 1px solid black;
-	width: 720px;
-	background-color: black;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: 720px;
+  background-color: black;
 }
 
-/*メイン画像*/
+/* メイン画像 */
 #main_image {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 /* サムネイル */
 #thumbnails {
-	margin: 5px;
+  margin: 5px;
 }
 
 ul {
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 li {
-	float: left;
-	margin-right: 10px;
-	width: 90px;
-	height: 60px;
+  float: left;
+  margin-right: 10px;
+  width: 90px;
+  height: 60px;
 }
 
 img.thumbnail_image {
-	width: 90px;
-	height: 60px;
+  width: 90px;
+  height: 60px;
 }
 
-.current_image{
-	border: 3px solid white;
+.current_image {
+  border: 3px solid white;
 }
 
 /* ナビゲーション */
 .nav {
-	display: inline-block;
+  display: inline-block;
 }
 
 .toolbar {
-	overflow: hidden;
-	text-align: center;
+  overflow: hidden;
+  text-align: center;
 }
 
 #prev {
-	color: white;
-	float: left;
-	width: 40px;
-	height: 40px;
-	coursor: pointer;
+  color: white;
+  float: left;
+  width: 40px;
+  height: 40px;
+  coursor: pointer;
 }
 
 #next {
-	color: white;
-	float: left;
-	width: 40px;
-	height: 40px;
-	color: white;
+  color: white;
+  float: left;
+  width: 40px;
+  height: 40px;
+  color: white;
 }
