@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="list">
+		</ul>
+
+		<input type="button" value="Add Element" onclick="add();">
+
+		<script>
+			function add() {
+				var parent = document.getElementById('list');
+				var list = document.createElement('li');
+
+				var list_element = document.getElementsByTagName('li');
+				var list_len = list_element.length + 1;
+				var text = document.createTextNode("Element:" + list_len.toString(10));
+				list.appendChild(text);
+				parent.appendChild(list);
+			}
+
+		</script>
+
+	</body>
+</html>

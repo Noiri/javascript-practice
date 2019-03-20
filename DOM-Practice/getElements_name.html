@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" name="result">
+		<input type="button" value="nameを利用して取得" onclick="showElements();">
+		<script>
+			function showElements() {
+				var elements = document.getElementsByName('result');
+				console.log(elements[0].value);
+			}
+
+		</script>
+
+	</body>
+</html>

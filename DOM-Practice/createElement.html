@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="list">
+		</ul>
+
+		<input type="button" value="add Node" onclick="appendElement();">
+		<script>
+			function appendElement() {
+				var li_tag = document.createElement('li');
+				var text_node = document.createTextNode('追加文字列');
+				li_tag.appendChild(text_node);
+				var list_element = document.getElementById('list');
+				list_element.appendChild(li_tag);
+			}
+		</script>
+
+	</body>
+</html>

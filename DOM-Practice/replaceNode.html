@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="list">
+			<li id="oldList">OLD LIST</li>
+		</ul>
+		<input type="button" value="Replace" onclick="replace();">
+		<script>
+			function replace() {
+				var newList = document.createElement('li');
+				newList.setAttribute('id', 'newList');
+				var new_text = document.createTextNode('New LIST');
+				newList.appendChild(new_text);
+
+				var oldList = document.getElementById('oldList');
+				var parentNode = oldList.parentNode;
+				parentNode.replaceChild(newList, oldList);
+			};
+		</script>
+	</body>
+</html>

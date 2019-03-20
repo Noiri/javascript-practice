@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="list">
+			<li>要素1</li>
+			<li>要素2</li>
+			<li>要素3</li>
+			<li>要素4</li>
+			<li>要素5</li>
+		</ul>
+
+		<input type="button" value="remove list element" onclick="remove();">
+
+		<script>
+			function remove() {
+				var parentElement = document.getElementById('list');
+				var lists = parentElement.getElementsByTagName('li');
+				var remove_idx = lists.length - 1;
+				parentElement.removeChild(lists[remove_idx]);
+			}
+
+		</script>
+
+	</body>
+</html>

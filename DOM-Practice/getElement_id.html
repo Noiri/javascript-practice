@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>Idを利用して要素を取得する</title>
+	</head>
+	<body>
+		<p id="result">pタグの文字列</p>
+		<p id="date">現在日時</p>
+		<input type="button" value="要素を取得" onclick="show();">
+		<input type="button" value="日時を取得" onclick="getDate();">
+		<script>
+			function show() {
+				var res = document.getElementById('result');
+				console.log(res.innerText);
+			}
+
+			//id=dateのｐタグの内容を書き換える
+			function getDate() {
+				var nowDate = new Date();
+				var res = document.getElementById('date');
+				res.innerText = nowDate.toLocaleString();
+			}
+
+		</script>
+	</body>
+</html>
