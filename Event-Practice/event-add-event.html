@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input id="btn" type="button"value="click me">
+		<script>
+			window.onload = function() {
+				var e = document.getElementById('btn');
+
+				//addEventListenerを使用することで複数のイベントを埋め込むことが出来る。
+				
+				e.addEventListener('click', function () {
+					console.log('event occured');
+				});
+
+				e.addEventListener('click', function() {
+					alert('event occured')
+				});
+			}
+		</script>
+	</body>
+</html>

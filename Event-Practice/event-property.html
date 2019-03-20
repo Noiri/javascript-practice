@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input id="btn" type="button" value="click me">
+		<script>
+			//プロパティーによるイベントハンドラの実装
+			var element = document.getElementById('btn');
+			element.onclick = function() {
+				alert('alert');
+			};
+		</script>
+	</body>
+</html>

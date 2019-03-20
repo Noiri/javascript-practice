@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<ul id="list">
+		</ul>
+
+		<input id="text" type="text">
+		<input id="btn" type="button" value="add element">
+
+		<script>
+			window.onload = function() {
+					var btn = document.getElementById('btn');
+					btn.addEventListener('click', function() {
+					var txt = (document.getElementById('text')).value;
+					var content = document.createTextNode(txt);
+					var list = document.createElement('li');
+					list.appendChild(content);
+					var parent = document.getElementById('list');
+					parent.appendChild(list);
+				});
+			};
+		</script>
+
+	</body>
+</html>
