@@ -15,6 +15,33 @@
 			mainImage.src = 'images/' + this.dataset.image; //imgタグのソース属性を書き換える
 			console.log(this.dataset.image);
 			current = this.dataset.index;
+			displayPageNumber();
 		 });
 	 }
+
+	 function displayPageNumber(){
+		 page.textContent = (Number(current) + 1) + '/' + images.length;
+	 }
+
+	 displayPageNumber();
+
+	 //prev button
+	 prev.addEventListener('click', function(){
+		 current--;
+		 if(current < 0){
+			 current = images.length - 1;
+		 }
+		 mainImage.src = images[current];
+		 displayPageNumber();
+	 });
+
+	 // next button
+	 next.addEventListener('click', function(){
+		 current++;
+		 if(current >= images.length){
+			 current = 0;
+		 }
+		 mainImage.src = images[current];
+		 displayPageNumber();
+	 });
 })();
